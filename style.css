@@ -1,0 +1,79 @@
+/* Torna o fundo transparente para se misturar ao site Wix */
+body {
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Garante que o player fique centralizado no iFrame */
+    margin: 0;
+}
+
+.music-player {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f0f0f0; /* Cor de fundo do player */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.control-btn {
+    background: #007bff; /* Cor do botão */
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Botão redondo */
+    cursor: pointer;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.control-btn:hover {
+    background: #0056b3;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+.volume-container i {
+    margin: 0 5px;
+}
+
+.volume-slider {
+    -webkit-appearance: none; /* Remove o estilo padrão */
+    appearance: none;
+    width: 100px; /* Largura do slider */
+    height: 6px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Estilo do "pino" do slider */
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
